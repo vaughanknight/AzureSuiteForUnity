@@ -10,3 +10,9 @@ The aim of this project is two fold:
 * For both - Simply import the same package.
 
 None of the code is presuming to be the 'best way'.  So if you know a better way, feel free to contribute.  Azure Cognitive Services in the past has had new features at a rate that if it continues, I'm going to need help keeping this up to date.
+
+## In Progress
+The folder structure lists everything under 'services' but only a few of those services are implemented, or in progress.  They include:
+* VisionAPI
+* BingSpeechAPI
+There is a high chance nothing will ever be 100% complete due to the dynamic nature of the services and new features being released all the time.  If you need something that's not there, add it, and submit a pull request.  As I said, I'll need help and it's much appreciated.
