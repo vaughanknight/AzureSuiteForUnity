@@ -1,0 +1,16 @@
+.vs
+.vs/*
+*.meta
+Build
+Build/**
+Library
+Library/**
+Temp
+Temp/**
+obj
+obj/**
+bin
+bin/**
+*.pdb
+ProjectSettings
+project.lock.json
