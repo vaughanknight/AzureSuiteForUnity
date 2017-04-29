@@ -15,4 +15,5 @@ None of the code is presuming to be the 'best way'.  So if you know a better way
 The folder structure lists everything under 'services' but only a few of those services are implemented, or in progress.  They include:
 * VisionAPI
 * BingSpeechAPI
+
 There is a high chance nothing will ever be 100% complete due to the dynamic nature of the services and new features being released all the time.  If you need something that's not there, add it, and submit a pull request.  As I said, I'll need help and it's much appreciated.
