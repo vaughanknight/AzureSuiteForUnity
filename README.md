@@ -3,6 +3,8 @@ This is a suite of code I've been using to plug Unity into Azure Cognitive Servi
 
 Some of this is simple such as sending text to services, others are more complex, such as sending images, audio, or video, and having them encoded the right way.
 
+I've also put a [Azure Cognitive Services and Unity](https://vaughanknight.com/2017/04/29/azure-cognitive-services-and-unity/) post up on the blog.  I plan on putting most of the verbage over there, and migrate the final stuff back to here.
+
 ## The Aim
 The aim of this project is two fold:
 * Editor Support - Allow developers to leverage Azure Cognitive Services in their tool chain, bringing AI to game development.
