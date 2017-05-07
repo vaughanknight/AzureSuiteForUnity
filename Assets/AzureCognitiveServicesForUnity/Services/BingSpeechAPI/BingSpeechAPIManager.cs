@@ -5,28 +5,35 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public class BingSpeechAPIManager : CognitiveServicesBehaviour<BingSpeechAPIManager>
+
+
+
+public class BingSpeechAPIManager : CognitiveServicesBehaviour<BingSpeechAPIManager>, ICognitiveServicesBehaviour
 {
     private BingSpeechAPI _bingSpeechAPI { get; set; }
-    void Start()
+    public AudioClip audioGenerated;
+    
+    public void Start()
     {
-        _bingSpeechAPI = new BingSpeechAPI(CognitiveKeys.BingSpeechAPI, this);
+        _bingSpeechAPI = new BingSpeechAPI("94c91aeef0af42ef944e988f520514fd", this);
 
-        _bingSpeechAPI.OnAcquireToken += _bingSpeechAPI_OnAcquireToken;
-        
-        // At launch get the auth token
-        _bingSpeechAPI.AcquireTokenAsync();
-    }
-
-    private void _bingSpeechAPI_OnAcquireToken(BingSpeechAPI sender, BingSpeechAPI.AcquireTokenEventArgs args)
-    {
-        Debug.Log(args.Token);
+        _bingSpeechAPI.TextToSpeechAsync("Hello There");
+        _bingSpeechAPI.OnRecognise += _bingSpeechAPI_OnRecognise;
+        _bingSpeechAPI.RecogniseAsync(_audioToRecognise);
     }
 
     private void _bingSpeechAPI_OnRecognise(BingSpeechAPI sender, BingSpeechAPI.RecogniseEventArgs args)
     {
         Debug.Log(args.JsonResponse);
     }
+
+    private void _bingSpeechAPI_OnTextToSpeech(BingSpeechAPI sender, BingSpeechAPI.TextToSpeechEventArgs args)
+    {
+        Debug.Log("Got response");
+        audioGenerated = args.GeneratedAudio;
+    }
+
+  
 
     public AudioClip _audioToRecognise;
     private int _RATE = 16000;

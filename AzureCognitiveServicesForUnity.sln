@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureCognitiveServicesForUnity", "AzureCognitiveServicesForUnity.csproj", "{C56206B8-035F-DF13-B6B1-F16212AEA4B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureCognitiveServicesForUnity.Editor", "AzureCognitiveServicesForUnity.Editor.csproj", "{C2001432-BF5F-E10C-5FBD-D7B1B4237309}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{C56206B8-035F-DF13-B6B1-F16212AEA4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C56206B8-035F-DF13-B6B1-F16212AEA4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C56206B8-035F-DF13-B6B1-F16212AEA4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2001432-BF5F-E10C-5FBD-D7B1B4237309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2001432-BF5F-E10C-5FBD-D7B1B4237309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2001432-BF5F-E10C-5FBD-D7B1B4237309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2001432-BF5F-E10C-5FBD-D7B1B4237309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

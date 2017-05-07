@@ -4,11 +4,17 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-public class VisionAPI : MonoBehaviour {
+
+public class ComputerVisionAPIManager : CognitiveServicesBehaviour<ComputerVisionAPIManager>, ICognitiveServicesBehaviour
+{
+    public new string Title
+    {
+        get { return "Computer Vision API"; }
+    }
 
     // Use this for initialization
     void Start() {
-
+        APIKey = "d0584ebec5524eafbf5f2d8ca4fc0ae5";
     }
 
     // Update is called once per frame
@@ -20,7 +26,7 @@ public class VisionAPI : MonoBehaviour {
     }
 
    
-    public string SUBSCRIPTION_KEY = "d0584ebec5524eafbf5f2d8ca4fc0ae5";
+   // public string SUBSCRIPTION_KEY = ;
     public Texture2D Image;
 
     
@@ -45,10 +51,10 @@ public class VisionAPI : MonoBehaviour {
 
         var data = Encoding.ASCII.GetBytes(body.ToCharArray());
 
-        Dictionary<string, string> Headers = new Dictionary<string, string>();
-        Headers.Add("Ocp-Apim-Subscription-Key", SUBSCRIPTION_KEY);
-        Headers.Add("Content-Type", "application/json");
-        var client = new WWW(requestUrl, data, Headers);
+        Dictionary<string, string> headers = new Dictionary<string, string>();
+        headers.Add("Ocp-Apim-Subscription-Key", APIKey);
+        headers.Add("Content-Type", "application/json");
+        var client = new WWW(requestUrl, data, headers);
 
         yield return client;
 
@@ -93,11 +99,11 @@ public class VisionAPI : MonoBehaviour {
         //var data = Image.EncodeToPNG();
 
         //var data = body;// Encoding.ASCII.GetBytes(body.ToCharArray());
-
-        Dictionary<string, string> Headers = new Dictionary<string, string>();
-        Headers.Add("Ocp-Apim-Subscription-Key", SUBSCRIPTION_KEY);
-        Headers.Add("Content-Type", "application/octet-stream");
-        var client = new WWW(requestUrl, data, Headers);
+        APIKey = "d0584ebec5524eafbf5f2d8ca4fc0ae5";
+        Dictionary<string, string> headers = new Dictionary<string, string>();
+        headers.Add("Ocp-Apim-Subscription-Key", APIKey);
+        headers.Add("Content-Type", "application/octet-stream");
+        var client = new WWW(requestUrl, data, headers);
 
         yield return client;
 
