@@ -13,3 +13,5 @@ bin/**
 *.pdb
 ProjectSettings
 project.lock.json
+**/OpenCVForUnity/**
+ 

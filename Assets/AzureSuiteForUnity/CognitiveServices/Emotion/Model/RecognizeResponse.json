@@ -1,0 +1,77 @@
+﻿{
+  "Emotions": [
+    {
+      "FaceRectangle": {
+        "Top": 114,
+        "Left": 212,
+        "Width": 65,
+        "Height": 65
+      },
+      "Scores": {
+        "Anger": 1.0570484E-08,
+        "Contempt": 1.52679547E-09,
+        "Disgust": 1.60232943E-07,
+        "Fear": 6.00660363E-12,
+        "Happiness": 0.9999998,
+        "Neutral": 9.449728E-09,
+        "Sadness": 1.23025981E-08,
+        "Surprise": 9.91396E-10
+      }
+    },
+    {
+      "FaceRectangle": {
+        "Top": 141,
+        "Left": 331,
+        "Width": 52,
+        "Height": 52
+      },
+      "Scores": {
+        "Anger": 0.002451766,
+        "Contempt": 0.0005512201,
+        "Disgust": 0.0063303886,
+        "Fear": 0.000122375583,
+        "Happiness": 0.9589189,
+        "Neutral": 0.0222537462,
+        "Sadness": 0.008983561,
+        "Surprise": 0.000388026354
+      }
+    },
+    {
+      "FaceRectangle": {
+        "Top": 110,
+        "Left": 70,
+        "Width": 51,
+        "Height": 51
+      },
+      "Scores": {
+        "Anger": 5.382089E-06,
+        "Contempt": 3.84402554E-08,
+        "Disgust": 8.22284051E-07,
+        "Fear": 1.46369352E-08,
+        "Happiness": 0.999993265,
+        "Neutral": 9.765083E-08,
+        "Sadness": 9.01927848E-08,
+        "Surprise": 2.7211172E-07
+      }
+    },
+    {
+      "FaceRectangle": {
+        "Top": 116,
+        "Left": 459,
+        "Width": 45,
+        "Height": 45
+      },
+      "Scores": {
+        "Anger": 3.95796542E-06,
+        "Contempt": 2.44360656E-08,
+        "Disgust": 3.291685E-07,
+        "Fear": 1.935065E-09,
+        "Happiness": 0.9999912,
+        "Neutral": 2.461666E-06,
+        "Sadness": 1.96641076E-06,
+        "Surprise": 8.561949E-08
+      }
+    }
+  ]
+}
+  
